@@ -47,24 +47,24 @@
 			this.chkAutoStart = new System.Windows.Forms.CheckBox();
 			this.chkAutoReset = new System.Windows.Forms.CheckBox();
 			this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+			this.chkDC_Option_DisableFocusLoss = new System.Windows.Forms.CheckBox();
 			this.gbDCEndSplits = new System.Windows.Forms.GroupBox();
 			this.tlpDCEndSplits = new System.Windows.Forms.TableLayoutPanel();
 			this.chkDC_TML_EndOfDLC = new System.Windows.Forms.CheckBox();
 			this.chkDC_TML_UnderwaterElevator = new System.Windows.Forms.CheckBox();
 			this.chkDC_TML_LeavingBoat = new System.Windows.Forms.CheckBox();
 			this.chkDCTongsEnd = new System.Windows.Forms.CheckBox();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-			this.chkDC_Option_DisableFocusLoss = new System.Windows.Forms.CheckBox();
 			this.gbEndSplits.SuspendLayout();
 			this.tlpEndSplits.SuspendLayout();
 			this.gbStartSplits.SuspendLayout();
 			this.tlpStartSplits.SuspendLayout();
 			this.tlpMain.SuspendLayout();
-			this.gbDCEndSplits.SuspendLayout();
-			this.tlpDCEndSplits.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			this.tableLayoutPanel1.SuspendLayout();
+			this.gbDCEndSplits.SuspendLayout();
+			this.tlpDCEndSplits.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// gbEndSplits
@@ -341,6 +341,46 @@
 			this.tlpMain.Size = new System.Drawing.Size(476, 376);
 			this.tlpMain.TabIndex = 0;
 			// 
+			// groupBox1
+			// 
+			this.groupBox1.AutoSize = true;
+			this.groupBox1.Controls.Add(this.tableLayoutPanel1);
+			this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.groupBox1.Location = new System.Drawing.Point(241, 3);
+			this.groupBox1.Name = "groupBox1";
+			this.groupBox1.Size = new System.Drawing.Size(232, 42);
+			this.groupBox1.TabIndex = 9;
+			this.groupBox1.TabStop = false;
+			this.groupBox1.Text = "Director\'s Cut options";
+			// 
+			// tableLayoutPanel1
+			// 
+			this.tableLayoutPanel1.AutoSize = true;
+			this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+			this.tableLayoutPanel1.ColumnCount = 1;
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tableLayoutPanel1.Controls.Add(this.chkDC_Option_DisableFocusLoss, 0, 1);
+			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 16);
+			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+			this.tableLayoutPanel1.RowCount = 2;
+			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+			this.tableLayoutPanel1.Size = new System.Drawing.Size(226, 23);
+			this.tableLayoutPanel1.TabIndex = 4;
+			// 
+			// chkDC_Option_DisableFocusLoss
+			// 
+			this.chkDC_Option_DisableFocusLoss.AutoSize = true;
+			this.chkDC_Option_DisableFocusLoss.Checked = true;
+			this.chkDC_Option_DisableFocusLoss.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.chkDC_Option_DisableFocusLoss.Location = new System.Drawing.Point(3, 3);
+			this.chkDC_Option_DisableFocusLoss.Name = "chkDC_Option_DisableFocusLoss";
+			this.chkDC_Option_DisableFocusLoss.Size = new System.Drawing.Size(176, 17);
+			this.chkDC_Option_DisableFocusLoss.TabIndex = 5;
+			this.chkDC_Option_DisableFocusLoss.Text = "Disable on focus loss behaviour";
+			this.chkDC_Option_DisableFocusLoss.UseVisualStyleBackColor = true;
+			// 
 			// gbDCEndSplits
 			// 
 			this.gbDCEndSplits.AutoSize = true;
@@ -424,46 +464,6 @@
 			this.chkDCTongsEnd.Text = "Tong\'s Mission Finished";
 			this.chkDCTongsEnd.UseVisualStyleBackColor = true;
 			// 
-			// groupBox1
-			// 
-			this.groupBox1.AutoSize = true;
-			this.groupBox1.Controls.Add(this.tableLayoutPanel1);
-			this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.groupBox1.Location = new System.Drawing.Point(241, 3);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(232, 42);
-			this.groupBox1.TabIndex = 9;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Director\'s Cut options";
-			// 
-			// tableLayoutPanel1
-			// 
-			this.tableLayoutPanel1.AutoSize = true;
-			this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-			this.tableLayoutPanel1.ColumnCount = 1;
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel1.Controls.Add(this.chkDC_Option_DisableFocusLoss, 0, 1);
-			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 16);
-			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-			this.tableLayoutPanel1.RowCount = 2;
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(226, 23);
-			this.tableLayoutPanel1.TabIndex = 4;
-			// 
-			// chkDC_Option_DisableFocusLoss
-			// 
-			this.chkDC_Option_DisableFocusLoss.AutoSize = true;
-			this.chkDC_Option_DisableFocusLoss.Checked = true;
-			this.chkDC_Option_DisableFocusLoss.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.chkDC_Option_DisableFocusLoss.Location = new System.Drawing.Point(3, 3);
-			this.chkDC_Option_DisableFocusLoss.Name = "chkDC_Option_DisableFocusLoss";
-			this.chkDC_Option_DisableFocusLoss.Size = new System.Drawing.Size(155, 17);
-			this.chkDC_Option_DisableFocusLoss.TabIndex = 5;
-			this.chkDC_Option_DisableFocusLoss.Text = "Disable on focus loss menu";
-			this.chkDC_Option_DisableFocusLoss.UseVisualStyleBackColor = true;
-			// 
 			// DXHRSettings
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -481,14 +481,14 @@
 			this.tlpStartSplits.PerformLayout();
 			this.tlpMain.ResumeLayout(false);
 			this.tlpMain.PerformLayout();
-			this.gbDCEndSplits.ResumeLayout(false);
-			this.gbDCEndSplits.PerformLayout();
-			this.tlpDCEndSplits.ResumeLayout(false);
-			this.tlpDCEndSplits.PerformLayout();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.tableLayoutPanel1.PerformLayout();
+			this.gbDCEndSplits.ResumeLayout(false);
+			this.gbDCEndSplits.PerformLayout();
+			this.tlpDCEndSplits.ResumeLayout(false);
+			this.tlpDCEndSplits.PerformLayout();
 			this.ResumeLayout(false);
 
         }
