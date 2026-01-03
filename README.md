@@ -1,13 +1,14 @@
-﻿LiveSplit.DXHR v1.4.0
+﻿LiveSplit.DXHR v1.5.0
 =====================
 
-LiveSplit.DXHR is a [LiveSplit](http://livesplit.org/) component for Deus Ex: Human Revolution and Deus Ex: Human Revolution Directors Cut.
+LiveSplit.DXHR is a [LiveSplit](http://livesplit.org/) component for Deus Ex: Human Revolution and Deus Ex: Human Revolution Director's Cut.
 
 Features
 --------
   * Keeps track of Game Time to get rid of loading times.
   * Auto start/stop/reset the timer.
   * Splits when you finish each split in Any%. (configurable)
+  * Allows for patching On Focus Loss Behaviour in DXHRDC.
 
 Install
 -------
@@ -34,6 +35,6 @@ https://github.com/drtchops/LiveSplit.DXHR/releases
 Credits
 -------
   * [DrTChops](http://twitch.tv/drtchops)
-  * [SuicideMachine](http://twitch.tv/suicidemachine)
+  * [SuicideMachine](https://www.twitch.tv/sui_vt)
   * Memory Addresses are from [DXHR-autosplitter](https://github.com/atennapel/Deus-Ex-Human-Revolution-autosplitter) by [Labbekak](http://www.twitch.tv/labbekak).
   * Plugin is based off [LiveSplit.Dishonored](https://github.com/fatalis/LiveSplit.Dishonored) by [Fatalis](http://twitch.tv/fatalis_).
