@@ -114,7 +114,7 @@ namespace LiveSplit.DXHR
                 (split == GameMemory.SplitArea.Hengsha2 && this.Settings.Hengsha2) ||
                 (split == GameMemory.SplitArea.DLCBoat && this.Settings.TML_LeavingBoat) ||
                 (split == GameMemory.SplitArea.DLCUnderwater && this.Settings.TML_UnderwaterElevator) ||
-                (split == GameMemory.SplitArea.DLCEnd && this.Settings.TML_Finished) ||
+                (split == GameMemory.SplitArea.DLCEnd && this.Settings.TML_FinishedTML) ||
                 (split == GameMemory.SplitArea.Singapore && this.Settings.Singapore) ||
                 (split == GameMemory.SplitArea.Panchaea && this.Settings.Panchaea)))
             {
