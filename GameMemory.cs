@@ -234,14 +234,12 @@ namespace LiveSplit.DXHR
 
                     while (!game.HasExited)
                     {
-                        string streamGroupId = String.Empty;
+						string streamGroupId = string.Empty;
                         _streamGroupIdPtr.Deref(game, out streamGroupId, 55);
 
-                        bool isLoading;
-                        _isLoadingPtr.Deref(game, out isLoading);
+						_isLoadingPtr.Deref(game, out bool isLoading);
 
-                        int cutsceneId;
-                        _cutsceneIdPtr.Deref(game, out cutsceneId);
+						_cutsceneIdPtr.Deref(game, out int cutsceneId);
 
                         if (streamGroupId != prevStreamGroupId)
                         {
@@ -314,7 +312,7 @@ namespace LiveSplit.DXHR
                         {
                             if (isLoading)
                             {
-                                Debug.WriteLine(String.Format("[NoLoads] Load Start - {0}", frameCounter));
+								Debug.WriteLine($"[NoLoads] Load Start - {frameCounter}");
 
                                 loadingStarted = true;
 
@@ -341,7 +339,7 @@ namespace LiveSplit.DXHR
                             }
                             else
                             {
-                                Debug.WriteLine(String.Format("[NoLoads] Load End - {0}", frameCounter));
+								Debug.WriteLine($"[NoLoads] Load End - {frameCounter}");
 
                                 if (loadingStarted)
                                 {
@@ -379,8 +377,8 @@ namespace LiveSplit.DXHR
                             }
                         }
 
-                        Debug.WriteLineIf(streamGroupId != prevStreamGroupId, String.Format("[NoLoads] streamGroupId changed from {0} to {1} - {2}", prevStreamGroupId, streamGroupId, frameCounter));
-                        Debug.WriteLineIf(cutsceneId != prevCutsceneId, String.Format("[NoLoads] cutsceneId changed from {0} to {1} - {2}", prevCutsceneId, cutsceneId, frameCounter));
+						Debug.WriteLineIf(streamGroupId != prevStreamGroupId, $"[NoLoads] streamGroupId changed from {prevStreamGroupId} to {streamGroupId} - {frameCounter}");
+						Debug.WriteLineIf(cutsceneId != prevCutsceneId, $"[NoLoads] cutsceneId changed from {prevCutsceneId} to {cutsceneId} - {frameCounter}");
 
                         prevStreamGroupId = streamGroupId;
                         prevIsLoading = isLoading;
@@ -414,7 +412,7 @@ namespace LiveSplit.DXHR
 
         private void Split(SplitArea split, uint frame)
         {
-            Debug.WriteLine(String.Format("[NoLoads] split {0} - {1}", split, frame));
+			Debug.WriteLine($"[NoLoads] split {split} - {frame}");
             _uiThread.Post(d =>
             {
                 if (this.OnSplitCompleted != null)
